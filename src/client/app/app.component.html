@@ -1,0 +1,53 @@
+<div class="container main-padding">
+  <div class="row top-layer-header-style">
+    <h3 class="pull-left text-center top-layer-text">Top Rated Amenities In and Around {{listingName.state}}</h3>
+  </div>
+  <div class="row bottom-layer-header-style"></div>
+  <div class="row">
+    <!--Main Content section containing of 2 sections: carousel display and listings -->
+    <div class="col-xs-14 col-sm-8 col-md-9 mainContent">
+      <!--Carousel display section -->
+      <div class="main-carousel-content"></div>
+      <!--Listign Table section -->
+      <div class="table-responsive">
+        <table class="table table-border table-hover">
+          <tr *ngFor="let item of maintopRatedAmenities">
+            <td class="vert-align hoz-align background">
+              <i class="{{item.faIcon}} fa-2x"></i>
+            </td>
+            <td>
+              <h4>{{item.amenity}}</h4>
+              <p>{{item.count}} near this listing</p>
+            </td>
+            <td class="vert-align">
+              See All <i class="fa fa-chevron-right"></i>
+            </td>
+          </tr>
+        </table>
+        <button class="allHome">
+          <i class="fa fa-home"></i>
+          <span>See All Amenities</span>
+          <i class="fa fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+    <!-- Right Side Navigation -->
+    <div class="col-xs-4 col-md-3">
+      <button class="navigationScroll"><i class="fa fa-chevron-up"></i></button>
+      <div class="right-navigation" *ngFor="let item of topRatedAmenities">
+        <div class="navigation-content">
+          <i class="{{item.faIcon}} fa-3x"></i>
+          <h3>
+            {{approximateLoc}}
+          </h3>
+          <h3>
+            {{item.amenity}}
+          </h3>
+        </div>
+      </div>
+
+      <button class="navigationScroll"><i class="fa fa-chevron-down"></i></button>
+    </div>
+  </div>
+  <div class="row pull-right"><img src="http://joyfulhome.com/app/public/amenities_yelp.png"></div>
+</div>

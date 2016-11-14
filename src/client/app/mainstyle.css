@@ -1,0 +1,106 @@
+.top-layer-header-style {
+  height: 80px;
+  color: #ffffff;
+  border-top: 5px solid #44b244;
+  background-color: #000000;
+}
+.top-layer-text {
+  margin-left: 10px;
+}
+.main-carousel-content {
+  width: 100%;
+  height: 500px;
+  background: url('http://joyfulhome.com/app/public/drk-linen.png');
+}
+.bottom-layer-header-style {
+  height: 10px;
+  background-color: #ffffff;
+}
+
+.main-padding {
+  padding: 10px;
+}
+
+.right-navigation {
+  width: 100%;
+  background: #252525;
+  text-align: center;
+  color: white;
+  margin: 0 auto 15px auto;
+}
+.right-navigation .navigation-content .fa {
+  transform: scale(1,1.6);
+  padding-bottom: 18px;
+
+}
+
+.right-navigation:hover,  .right-navigation:active{
+  cursor: pointer;
+  background-color: #44b244;
+
+}
+.right-navigation .navigation-content * {
+  margin:0;
+}
+.right-navigation:before {
+  padding-top:100%;
+  content:'';
+}
+.right-navigation:before,
+.navigation-content {
+  display:inline-block;
+  vertical-align:middle;
+}
+.navigationScroll {
+  display: block;
+  background-color: #44b244;
+  margin: 0 auto 10px auto;
+  width: 100%;
+  height: 30px;
+  border: none;
+  color: #fff;
+  font-size: 1.2em;
+}
+.navigationScroll:hover, .navigationScroll:active {
+  cursor: pointer;
+  background-color: #252525;
+}
+
+.table tr>td.vert-align{
+  vertical-align: middle;
+}
+.table tr>td.hoz-align{
+  text-align: center;
+}
+.table tr>td.background{
+  background-color: #f2f2f2;
+}
+.table tr:last-child {
+  border-bottom: 2px solid #44b244;
+}
+.allHome {
+  position: absolute;
+  background-color: #44b244;
+  color: #ffffff;
+  bottom: 2.7%;
+  border: none;
+  text-align: left;
+  padding: 5px;
+  width: 200px;
+  left:40%;
+  border-radius: 4px 4px 0 0;
+}
+.allHome span {
+  padding-left: 10px;
+}
+.allHome i {
+  padding-left: 5px;
+  font-size: .7em;
+}
+.allHome .fa-home {
+  color:#fff;
+  background-color: #000;
+  border-radius: 20px;
+  padding: 3px 5px;
+  font-size: 1em;
+}
